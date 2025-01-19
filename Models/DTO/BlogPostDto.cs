@@ -1,4 +1,6 @@
-﻿namespace CodePulseAPI.Models.DTO
+﻿using Microsoft.EntityFrameworkCore.Metadata.Conventions;
+
+namespace CodePulseAPI.Models.DTO
 {
     public class BlogPostDto
     {
@@ -11,5 +13,6 @@
         public DateTime PublishedDate { get; set; }
         public string Author { get; set; }
         public bool IsVisible { get; set; }
+        public List<CategoryDto> Categories { get; set; } = new List<CategoryDto>();
     }
 }

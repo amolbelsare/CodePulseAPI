@@ -6,7 +6,7 @@ namespace CodePulseAPI.Data
 {
     public class ApplicationDbConetext : DbContext
     {
-        public ApplicationDbConetext(DbContextOptions options) : base(options)
+        public ApplicationDbConetext(DbContextOptions<ApplicationDbConetext> options) : base(options)
         {     
         }
 
